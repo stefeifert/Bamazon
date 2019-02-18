@@ -5,8 +5,8 @@ var bodyParser = require('body-parser');
 var app = express();
 
 // Link in html and api routes
-var apiRoutes = require('./app/routing/apiRoutes.js');
-var htmlRoutes = require('./app/routing/htmlRoutes.js');
+var apiRoutes = require('/routes/apiRoutes.js');
+var htmlRoutes = require('/routes/htmlRoutes.js');
 
 // Set up Express App
 var app = express();
@@ -19,8 +19,8 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 
 // Server Routing Map 
-apiRoutes(app); // API route - Must be listed first due to the HTML default catch all "use" route
-htmlRoutes(app); // HTML route 
+apiRoutes(routes); // API route - Must be listed first due to the HTML default catch all "use" route
+htmlRoutes(routes); // HTML route 
 
 // Listener - Start the server
 app.listen(PORT, function () {
