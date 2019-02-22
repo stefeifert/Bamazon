@@ -12,197 +12,40 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <script src="public/app.js"></script>
+    <!-- <script src="public/app.js"></script>//NEED THIS OR RENAME??// -->
 </head>
 
 <body>
     <div class="header">
         <h1>Welcome to BAMAZON!</h1>        
     </div>
-    <div class="col">
-        <p>PRODUCTS</p>
-    </div>
- 
-    </span>
     
     <div class="container-fluid">
         <div class="row">
-            <div class="col-2">Cat Teaser</div>
-            <div class="col-2">Pet Products</div>
-            <div class="col-2">$8.99</div>
-            <div class="col-2">5</div>
-            <div class="col-2">
-                <form>
-                    <div class="form-group">
-                        <input type="number" class="form-control" id="quantity" placeholder="Select Quantity">
-                    </div>
-                </form>
-            </div>
-            <div class="col-2">
-                <button type="button" class="btn btn-dark">Add to Cart</button>
-            </div>
+            <div class="col-2">Product Name</div>
+            <div class="col-2">Department Name</div>
+            <div class="col-2">Price</div>
+            <div class="col-2"># in Stock</div>
         </div>
         <div class="row">
-            <div class="col-2">Litter Box-Large</div>
-            <div class="col-2">Pet Products</div>
-            <div class="col-2">$29.99</div>
-            <div class="col-2">1</div>
+            <div id="ProductName" class="col-2"></div>
+            <div id="DepartmentName" class="col-2"></div>
+            <div id="Price" class="col-2"></div>
+            <div id="StockQuantity" class="col-2"></div>
             <div class="col-2">
                 <form>
                     <div class="form-group">
-                        <input type="number" class="form-control" id="quantity" placeholder="Select Quantity">
+                        <input type="text" class="form-control" placeholder="Select Quantity">
                     </div>
                 </form>
             </div>
             <div class="col-2">
-                <button type="button" class="btn btn-dark">Add to Cart</button>
-            </div>
+                <button type="submit" class="btn btn-dark">Add to Cart</button>
+            </div>               
         </div>
-        <div class="row">
-            <div class="col-2">Litter Box-Medium</div>
-            <div class="col-2">Pet Products</div>
-            <div class="col-2">$24.99</div>
-            <div class="col-2">11</div>
-            <div class="col-2">
-                <form>
-                    <div class="form-group">
-                        <input type="number" class="form-control" id="quantity" placeholder="Select Quantity">
-                    </div>
-                </form>
-            </div>
-            <div class="col-2">
-                <button type="button" class="btn btn-dark">Add to Cart</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-2">Litter Box-Small</div>
-            <div class="col-2">Pet Products</div>
-            <div class="col-2">$19.99</div>
-            <div class="col-2">18</div>
-            <div class="col-2">
-                <form>
-                    <div class="form-group">
-                        <input type="number" class="form-control" id="quantity" placeholder="Select Quantity">
-                    </div>
-                </form>
-            </div>
-            <div class="col-2">
-                <button type="button" class="btn btn-dark">Add to Cart</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-2">Doggy Squeaky Toy-Yellow</div>
-            <div class="col-2">Pet Products</div>
-            <div class="col-2">$7.99</div>
-            <div class="col-2">25</div>
-            <div class="col-2">
-                <form>
-                    <div class="form-group">
-                        <input type="number" class="form-control" id="quantity" placeholder="Select Quantity">
-                    </div>
-                </form>
-            </div>
-            <div class="col-2">
-                <button type="button" class="btn btn-dark">Add to Cart</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-2">Doggy Squeaky Toy-Blue</div>
-            <div class="col-2">Pet Products</div>
-            <div class="col-2">$7.99</div>
-            <div class="col-2">15</div>
-            <div class="col-2">
-                <form>
-                    <div class="form-group">
-                        <input type="number" class="form-control" id="quantity" placeholder="Select Quantity">
-                    </div>
-                </form>
-            </div>
-            <div class="col-2">
-                <button type="button" class="btn btn-dark">Add to Cart</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-2">Rhinestone Dog Collar</div>
-            <div class="col-2">Pet Products</div>
-            <div class="col-2">$29.99</div>
-            <div class="col-2">20</div>
-            <div class="col-2">
-                <form>
-                    <div class="form-group">
-                        <input type="number" class="form-control" id="quantity" placeholder="Select Quantity">
-                    </div>
-                </form>
-            </div>
-            <div class="col-2">
-                <button type="button" class="btn btn-dark">Add to Cart</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-2">Rhinestone Cat Collar</div>
-            <div class="col-2">Pet Products</div>
-            <div class="col-2">$19.99</div>
-            <div class="col-2">9</div>
-            <div class="col-2">
-                <form>
-                    <div class="form-group">
-                        <input type="number" class="form-control" id="quantity" placeholder="Select Quantity">
-                    </div>
-                </form>
-            </div>
-            <div class="col-2">
-                <button type="button" class="btn btn-dark">Add to Cart</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-2">Stainless Steel Dog Bowl</div>
-            <div class="col-2">Pet Products</div>
-            <div class="col-2">$9.99</div>
-            <div class="col-2">18</div>
-            <div class="col-2">
-                <form>
-                    <div class="form-group">
-                        <input type="number" class="form-control" id="quantity" placeholder="Select Quantity">
-                    </div>
-                </form>
-            </div>
-            <div class="col-2">
-                <button type="button" class="btn btn-dark">Add to Cart</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-2">Stainless Steel Cat Bowl</div>
-            <div class="col-2">Pet Products</div>
-            <div class="col-2">$6.99</div>
-            <div class="col-2">2</div>
-            <div class="col-2">
-                <form>
-                    <div class="form-group">
-                        <input type="number" class="form-control" id="quantity" placeholder="Select Quantity">
-                    </div>
-                </form>
-            </div>
-            <div class="col-2">
-                <button type="button" class="btn btn-dark">Add to Cart</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-2">Dog Bed</div>
-            <div class="col-2">Pet Products</div>
-            <div class="col-2">$59.99</div>
-            <div class="col-2">30</div>
-            <div class="col-2">
-                <form>
-                    <div class="form-group">
-                        <input type="number" class="form-control" id="quantity" placeholder="Select Quantity">
-                    </div>
-                </form>
-            </div>
-            <div class="col-2">
-                <button type="button" class="btn btn-dark">Add to Cart</button>
-            </div>
-        </div>
+           
     </div>
+        
 
         <div class="modal" tabindex="-1" role="dialog">
                 <div class="modal-dialog" role="document">
