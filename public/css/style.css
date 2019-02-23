@@ -38,6 +38,9 @@ body{
     margin-top:35px;
     background-color: rgb(253, 207, 108); 
 }
+.btn{
+    background-color: green;
+}
 .cart-counter{
     font-family:Arial, Helvetica, sans-serif;
     font-weight:bold;
