@@ -1,11 +1,23 @@
 {
-  "name": "bamazon",
+  "name": "bamazon_sequelize",
   "version": "1.0.0",
-  "description": "\"Pseudo store-front app that will record and report store inventory\"",
+  "description": "bamazon store",
   "main": "server.js",
+  "engine": {
+    "node": "v8.11.3"
+  },
+  "dependencies": {
+    "config.json": "^0.0.4",
+    "express": "^4.16.4",
+    "mysql2": "^1.6.4",
+    "sequelize": "^4.23.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "seed": "node seeds.sql"
   },
   "repository": {
     "type": "git",
@@ -16,10 +28,7 @@
   "bugs": {
     "url": "https://github.com/stefeifert/Bamazon/issues"
   },
-  "homepage": "https://github.com/stefeifert/Bamazon#readme",
-  "dependencies": {
-    "express": "^4.16.4",
-    "mysql": "^2.16.0",
-    "sequelize": "^4.42.0"
-  }
+  "homepage": "https://github.com/stefeifert/Bamazon#readme"
+  
 }
+
