@@ -1,6 +1,9 @@
+h1 {
+  font-weight: bold;  
+}
+
 body{
-    /* background-color:rgb(80, 152, 180);  */
-    background-image: url("../assets/fishing.jpg");
+    background-image: url("../assets/landscape-4007310_1920.jpg");
     background-repeat:no-repeat;
     background-size: cover; 
     opacity:0.9;
@@ -12,11 +15,11 @@ body{
 .home-link{
     text-decoration: none !important;
     font-size: 20px;
-    color: rgb(190, 126, 41);
+    color: orange;
 }
 .home-link:hover{
-    color:orange;
-}
+    color: white;
+} 
 .active{
     margin-left:20px;
 }
@@ -24,11 +27,16 @@ body{
     position:relative;
     bottom:20px;
 }
+.th {
+    opacity: 100%;
+}
+
 .page-row{
     width:100%;
 }
 .jumbotron{
     margin-top:35px;
+    background-color: rgb(253, 207, 108); 
 }
 .cart-counter{
     font-family:Arial, Helvetica, sans-serif;
