@@ -85,10 +85,10 @@ $(function () {
     //This function adds to the cart count on the home page when add to car is clicked
     let count = 0;
 
-    $("#product-info").on('click', '.addOne', function () {
-        count++;
-        $(".cart-counter").html(count);
-    });
+    // $("#product-info").on('click', '.addOne', function () {
+    //     count++;
+    //     $(".cart-counter").html(count);
+    // });
     //This on-click call back function sets the empty counter back to 0 when the car is emptied
     $('.empty-cart').on('click', function () {
         count = 0;
