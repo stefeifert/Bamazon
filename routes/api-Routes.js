@@ -1,7 +1,7 @@
 const db = require('../models');
 
 
-module.exports = function (app) {
+function apiRoutes(app) {
 
     // GET route for getting all of the products
     app.get('/api/products', function (req, res) {
@@ -41,3 +41,6 @@ module.exports = function (app) {
         });
     });
 }
+
+// Export for use in main server.js file
+module.exports = apiRoutes;

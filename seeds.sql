@@ -1,3 +1,12 @@
+-- // Drops the bamazon_db if it exists currently //
+DROP DATABASE IF EXISTS bamazon_db;
+-- // Creates the "bamazon_db" database //
+CREATE DATABASE bamazon_db;
+
+-- // Makes it so all of the following code will affect bamazon_db //
+USE bamazon_db;
+
+
 INSERT INTO Products SET department_name="Beauty", product_name="Chanel Chance Perfume", price=150.00, stock_quantity=25, createdAt=NOW(), updatedAt=NOW();
 INSERT INTO Products SET department_name="Home", product_name="Throw Pillow", price=19.99, stock_quantity=78, createdAt=NOW(), updatedAt=NOW();
 INSERT INTO Products SET department_name="Pets", product_name="Rhinestone Cat Collar", price=12.99, stock_quantity=3, createdAt=NOW(), updatedAt=NOW();

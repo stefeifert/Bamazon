@@ -12,11 +12,14 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('public'));
 
-// Routes
-// -----------------
+app.use(express.static(path.join(__dirname, "./public")));
 
-require('./routes/api-routes.js')(app);
-require('./routes/html-routes')(app);
+// Link in html and api routes
+const apiRoutes = require('./routes/api-Routes.js');
+const htmlRoutes = require('./routes/html-Routes.js');
+
+apiRoutes(app);
+htmlRoutes(app);
 
 const db = require('./models');
 
