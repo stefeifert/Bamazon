@@ -1,10 +1,10 @@
 {
   "development": {
     "username": "root",
-    "password": "password",
+    "password": "Bronson14!",
     "database": "bamazon_db",
     "host": "localhost",
-    "port": 3000,
+    "port": 3306,
     "dialect": "mysql"
   },
   "test": {
