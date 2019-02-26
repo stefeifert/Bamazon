@@ -44,7 +44,7 @@ $(function () {
             } else {
                 $(`#product-${itemId}`).val("")
 
-                alert("item added");
+                alert("Item added");
 
 
                 $('#cart-table').append(` 
