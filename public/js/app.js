@@ -5,7 +5,7 @@ $(function () {
     }).then(function (response) {
         //Loops through the response and dynamically adds the information on the product selection page
         for (let i = 0; i < response.length; i++) {
-
+            console.log(response[i]);
             $('#product-info').append(`
           <tr>
           <th>${response[i].product_name}</th>
