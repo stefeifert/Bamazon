@@ -1,5 +1,5 @@
 {
-  "name": "bamazon_sequelize",
+  "name": "bamazon",
   "version": "1.0.0",
   "description": "bamazon store",
   "main": "server.js",
@@ -17,7 +17,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run seed && node server.js",
     "watch": "nodemon server.js",
-    "seed": "node seeds.sql"
+    "seed": "node ./seeds.js"
   },
   "repository": {
     "type": "git",
