@@ -9,7 +9,7 @@ $(function () {
             $('#product-info').append(`
           <tr>
           <th>${response[i].product_name}</th>
-            <td>${response[i].department_name}</td
+            <td>${response[i].department_name}</td>
             <td>${response[i].price}</td>
             <td>${response[i].stock_quantity} units</td>
             <td><form class="form-inline">
@@ -51,7 +51,7 @@ $(function () {
                 $('#cart-table').append(` 
       <tr>
       <th class="cart-item">${itemName}</th>
-        <td class="cart-price">$${itemPrice}.99</td>
+        <td class="cart-price">$${itemPrice}</td>
         <td class="cart-quantity">${userQuantity}</td>
       
         </tr> `);
