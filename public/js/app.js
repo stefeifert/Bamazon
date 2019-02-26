@@ -9,8 +9,9 @@ $(function () {
             $('#product-info').append(`
           <tr>
           <th>${response[i].product_name}</th>
+            <td>${response[i].department_name}</td
+            <td>${response[i].price}</td>
             <td>${response[i].stock_quantity} units</td>
-            <td>$${response[i].price}.99</td>
             <td><form class="form-inline">
             <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Enter Quantity</label>
             <form>
