@@ -3,11 +3,11 @@ h1 {
 }
 
 body{
-    background-image: url("../assets/landscape-4007310_1920.jpg");
+    background-image: url("../assets/lpexels-photo-425047.jpg");
     background-repeat:no-repeat;
     background-size: cover; 
     opacity:0.9;
-    width:100%;
+    /* width:100%; */
 }
 .hide{
     display: none;
