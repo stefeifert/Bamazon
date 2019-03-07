@@ -1,25 +1,25 @@
 h1 {
   font-weight: bold;  
 }
-
 body{
-    background-image: url("../assets/lpexels-photo-425047.jpg");
+    background-image: url("../assets/pexels-photo-433604.jpeg");
     background-repeat:no-repeat;
-    background-size: cover; 
-    opacity:0.9;
-    /* width:100%; */
+    background-size: cover;   
+    opacity:0.9; 
 }
 .hide{
     display: none;
 }
 .home-link{
-    text-decoration: none !important;
+    text-decoration: none !important; 
     font-size: 20px;
-    color: orange;
+    color: rgb(99, 157, 243);
+    
 }
 .home-link:hover{
     color: white;
-} 
+    text-decoration: none !important;
+}  
 .active{
     margin-left:20px;
 }
@@ -36,16 +36,19 @@ body{
 }
 .jumbotron{
     margin-top:35px;
-    background-color: rgb(253, 207, 108); 
+    background-color: rgb(207, 234, 245); 
 }
 .btn{
-    background-color: green;
+    background-color: rgb(21, 5, 238);
 }
 .cart-counter{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight:bold;
     font-size:22px;
     position:absolute;
     left: 100px;
     top: 250px;
+}
+.table td, .table th {
+    border-top: 1px solid gray;
 }
